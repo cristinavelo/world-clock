@@ -6,7 +6,7 @@ function updateTime() {
   londonTime = moment().tz("Europe/London");
   londonDateElement.innerHTML = londonTime.format("MMMM DD, YYYY");
   londonTimeElement.innerHTML = londonTime.format(
-    "hh:mm:SS [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 
   //Seoul
@@ -16,7 +16,7 @@ function updateTime() {
   seoulTime = moment().tz("Asia/Seoul");
   seoulDateElement.innerHTML = seoulTime.format("MMMM DD, YYYY");
   seoulTimeElement.innerHTML = seoulTime.format(
-    "hh:mm:SS [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 }
 
