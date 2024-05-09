@@ -18,6 +18,16 @@ function updateTime() {
   seoulTimeElement.innerHTML = seoulTime.format(
     "hh:mm:ss [<small>]A[</small>]"
   );
+
+  //Paris
+  let parisElement = document.querySelector("#paris");
+  parisDateElement = parisElement.querySelector(".date");
+  parisTimeElement = parisElement.querySelector(".time");
+  parisTime = moment().tz("Europe/Paris");
+  parisDateElement.innerHTML = parisTime.format("MMMM DD, YYYY");
+  parisTimeElement.innerHTML = parisTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {
