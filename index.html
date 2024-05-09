@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock - Cristina Velo</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +25,7 @@
         <option value="">Rome</option>
       </select>
 
-      <div class="cities">
+      <div class="cities" id="london">
         <div>
           <h2>London 👑</h2>
           <div class="date">May 09, 2024</div>
@@ -31,7 +33,7 @@
         <div class="time">01:36:28 <small>PM</small></div>
       </div>
 
-      <div class="cities">
+      <div class="cities" id="seoul">
         <div>
           <h2>Seoul 🍜</h2>
           <div class="date">May 09, 2024</div>
