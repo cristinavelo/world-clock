@@ -1,8 +1,63 @@
+body {
+  background-color: #f5f1fe;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 h1 {
   text-align: center;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+.date {
+  opacity: 0.7;
+}
+.cities {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.cities:last-child {
+  border: none;
+}
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 36px;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
